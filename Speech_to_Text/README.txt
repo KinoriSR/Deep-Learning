@@ -19,7 +19,7 @@ The model architecture is an Encoder, Attention and Decoder. All LSTMs are bidir
 LSTM followed by 3 pyramidal LSTMs each reducing the sequence length by 2. Odd lengthed sequences are padded
 with 0. The value and key are the outputs of separate linear layers. The Decoder is an embedding layer with
 tied weights with the final output linear layer. There are 2 LSTM Cell layers after the embedding layer.
-I also used a scheduled teacher forcing which started with a probability of 100% and reducing every 5 epochs.
+I also used scheduled teacher forcing which started with a probability of 100% and reducing every 5 epochs.
 I also masked the attention and loss.
 
 I had trouble getting other variations to perform better. I tried using locked dropout at the input and in
