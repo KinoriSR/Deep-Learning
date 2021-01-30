@@ -1,3 +1,4 @@
+# This code was provided by class
 from matplotlib.lines import Line2D
 import matplotlib.pyplot as plt
 import numpy as np
